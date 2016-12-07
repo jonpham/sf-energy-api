@@ -1,0 +1,12 @@
+<h1>Energy Data for SF Buildings</h1>
+
+<% @building_data.each do |building| %>
+  <div class = "data_item">
+    <ul style="display: inline">
+      <li style="display: inline"><strong>Building:</strong> <%= building['facility'] %> </li>
+      <li style="display: inline">Energy Use Intensity: <%= building['_2013_site_eui_kbtu_sq_ft'] %> </li>
+      <li style="display: inline">Energy Rating: <%= building['_2013_energy_star_rating'] %> </li>
+    </ul>
+  </div>
+<% end %>
+
